@@ -1,4 +1,5 @@
 package org
+import org.*
 def myUtils = new org.validAdd()
 def work(int x,int y){    
     def tes=myUtils.add(x,y)
