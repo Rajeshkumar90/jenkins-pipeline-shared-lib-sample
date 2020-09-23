@@ -1,5 +1,5 @@
-def work(int x,int y){
-    def myUtils = new org.validAdd()
+def myUtils = new org.validAdd()
+def work(int x,int y){    
     def tes=myUtils.add(x,y)
     return tes
 }
