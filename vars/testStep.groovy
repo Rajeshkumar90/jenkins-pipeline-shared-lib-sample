@@ -3,10 +3,10 @@ def checkout(Map pipelineParams)
 println "Checkout Git"
   git branch: pipelineParams.branchName, url: pipelineParams.giturl
 }
-def call(body) {
+def caller(body) {
     echo "Start Deploy"
 
-    new Sample(script:this).run()
+    new Sample().run()
 
     echo "Deployed"
     currentBuild.result = 'SUCCESS' //FAILURE to fail
