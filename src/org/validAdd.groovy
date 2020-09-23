@@ -1,6 +1,6 @@
 package org
 
-class Deployer {
+class validAdd {
 def add(int x,int y)
 {
 int z= x+y
