@@ -14,4 +14,8 @@ public class Sample {
                 ", y=" + y +
                 '}';
     }
+    public add(int x, int y){
+    int z=x+y;
+        return z;
+    }
 }
