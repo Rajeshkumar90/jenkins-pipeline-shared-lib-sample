@@ -1,6 +1,6 @@
 package org
 
-class validAdd implements Serializable {
+
 def add(int x,int y)
 {
 int z= x+y
@@ -12,4 +12,4 @@ println "Checkout Git"
 git branch: pipelineParams.branchName, url: pipelineParams.giturl
 }
 
-}
+
