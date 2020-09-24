@@ -1,7 +1,12 @@
 package org
 import org.*
 
-def work(int x,int y){ 
+/*def work(int x,int y){ 
+    def myUtils = new org.validAdd()
+    def tes=myUtils.add(x,y)
+    return tes
+}*/
+def work(Map pipelineParams){ 
     def myUtils = new org.validAdd()
     def tes=myUtils.add(x,y)
     return tes
