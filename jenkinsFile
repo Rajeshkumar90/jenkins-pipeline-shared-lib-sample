@@ -1,0 +1,4 @@
+@Library("pipeline_shared") _
+def giturl="https://github.com/Rajeshkumar90/jenkins-pipeline-shared-lib-sample.git"
+pipelineinVarFolder(giturl:giturl,branchName:"2020.12",x:5,y:100)
+///Pipeline in var folder
