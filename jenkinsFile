@@ -1,0 +1,27 @@
+@Library("pipeline_shared") _
+pipeline{
+agent{
+ label "master"
+}
+stages{
+   /* stage("Git Checkout"){
+        steps{
+            script{
+                def giturl="https://github.com/Rajeshkumar90/jenkins-pipeline-shared-lib-sample.git"
+                testStep.checkout(giturl:giturl,branchName:"2020.12")
+            }
+        }
+	}*/
+    stage("Checkout class"){
+        steps{
+            script{                
+                def x=callSrcFile.work(10,5)
+                println x
+                def giturl="https://github.com/Rajeshkumar90/jenkins-pipeline-shared-lib-sample.git"
+                callSrcFile.check(giturl:giturl,branchName:"2020.12")
+            }
+                
+        }
+    }
+}
+}
