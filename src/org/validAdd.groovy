@@ -6,10 +6,10 @@ def add(int x,int y)
 int z= x+y
 return z
 }
-def checkout(String branchName,String giturl)
+def checkout(xyz,String branchName,String giturl)
 {
 println "Checkout Git"
-git branch: branchName, url: giturl
+xyz.git branch: branchName, url: giturl
 }
 return this
 }
