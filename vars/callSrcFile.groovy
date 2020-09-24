@@ -8,7 +8,7 @@ import org.*
 }*/
 def work(Map pipelineParams){ 
     def myUtils = new org.validAdd()
-    def tes=myUtils.add(x,y)
+    def tes=myUtils.add(pipelineParams.x,pipelineParams.y)
     return tes
 }
 def check(Map pipelineParams)
